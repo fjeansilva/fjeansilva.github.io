@@ -1,6 +1,6 @@
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 
-body, html, main {
+body, html {
   width: 100%;
   height: 100%;
   padding: 0;
@@ -8,12 +8,11 @@ body, html, main {
 }
 
 body {
+  /*font-family: 'Indie Flower', cursive;*/
+  font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 1.2em;
-}
-
-* {
-  outline: 1px solid red;
+  background: #fefefe;
 }
 
 /*
@@ -25,7 +24,11 @@ body {
 .header {
   width: 100%;
   height: 500px;
-  border: 3px solid green;
+  border: 1px solid red;
+  background: #cb2d3e;
+  background: -webkit-linear-gradient(to left, #cb2d3e , #ef473a);
+  background: linear-gradient(to left, #cb2d3e , #ef473a);
+  color: #fff;
 }
 
 .header__logo {
@@ -33,16 +36,19 @@ body {
 }
 
 .header__hamburguer {
-  font-size: 1.3em;
+  font-size: 2.3em;
   float: right;
-  margin-right: 15px;
+  margin: 15px;
 }
 
 .header__menu {
   width: 300px;
   height: 100%;
+  background: #fff;
+  border-right: 1px solid #ccc;
   position: absolute;
   top: 0;
+  left: 0;
   transform: translate(-300px, 0);
   transition: transform 0.3s ease;
 }
@@ -55,14 +61,241 @@ body {
   display: none;
 }
 
-.header--theme-red {
-
+.menu__title {
+  font-size: 3em;
+  color: #ccc;
+  height: 40px;
+  padding: 40px;
+  text-align: center;
+  background: #191919;
 }
+
+.menu__list .list__item {
+  line-height: 4em;
+}
+
+.menu__list > .list__item > a {
+  text-decoration: none;
+  color: #2f2f32;
+}
+
+.menu__list > .list__item  .fa {
+  padding-right: 10px;
+}
+
 
 .header__title {
+  margin-top: 100px;
+  text-align: center;
+  font-weight: 300;
+  font-size: 1.4em;
+}
+
+.header__subtitle {
+  font-size: 3.5em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.icon__heart {
+  color: #fff;
+  font-style: normal;
+}
+
+.header__social {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  list-style: none;
+  padding: 0;
+  margin: 20px 20%;
+}
+
+.social__item .fa {
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  padding: 17px 0 0 20px;
+  background: #191919;
+  color: #fff;
+  transition: background 0.5s;
+}
+
+.social__item .fa:hover {
+  cursor: pointer;
+  background: #cb2d3e;
+}
+
+/*
+ *
+ * Experience
+ *
+ */
+
+.experience {
+  text-align: center;
+}
+
+.experience__title,
+.jobs__title,
+.projects__title {
+  text-transform: uppercase;
+}
+
+/*
+ *
+ * Works
+ *
+ */
+
+.works__title {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/*
+ *
+ * Skills
+ *
+ */
+
+.skills__dashboard {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.dashboard_grid {
+  border-right: 2px solid;
+  max-width: 25%;
+}
+
+.grid__list {
+  list-style: none;
+  text-align: right;
+}
+
+.grid__list > .list__item {
+  line-height: 2em;
+}
+
+.dashboard__html5,
+.dashboard__css3,
+.dashboard__javascript {
+  border: 1px solid red;
+  width: 100px;
+}
+
+.dashboard__html5 {
+  margin-top: 40px;
+}
+
+.dashboard__css3 {
+  margin-top: 35px;
+}
+
+.dashboard__javascript {
+  margin-top: 10px;
+}
+
+.skills__items {
+  display: flex;
+  flex-flow: row wrap;
+  list-style: none;
+  margin: 0 0 0 130px;
+  padding: 0;
+}
+
+.items__item:nth-child(1) {
+  padding-left: 30px;
+}
+
+.items__item:nth-child(2) {
+  padding-left: 70px;
+}
+
+.items__item:nth-child(3) {
+  padding-left: 60px;
+}
+
+/*
+ *
+ * Help
+ *
+ */
+
+.help {
 
 }
 
-.header__title--disabled {
+.help__title {
+  text-align: center;
+  text-transform: uppercase;
+}
 
+/*
+ *
+ * Blog
+ *
+ */
+
+.blog {
+  border: 3px solid;
+}
+
+.blog__title {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.blog__post {
+  border: 1px solid red;
+  border-radius: 3px;
+  width: 50%;
+  margin: 10px auto;
+  padding: 20px;
+}
+
+.post__profile {
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+.post__title {
+  display: inline-block;
+}
+
+/*
+ *
+ * Footer
+ *
+ */
+
+ .footer__contact {
+   display: flex;
+   flex-flow: row wrap;
+   border: 1px solid red;
+ }
+
+.contact__phone,
+.contact__email {
+  border: 1px solid;
+  padding: 20px;
+  flex-grow: 1;
+}
+
+.footer__social {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  margin: 20px 20%;
+ }
+
+.footer__social > .social__item {
+  font-size: 2.5em;
+}
+
+.footer__copyright {
+  text-align: center;
 }
