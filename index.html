@@ -16,7 +16,7 @@
 
       <nav class="header__menu">
         <div class="menu__title">
-          JS
+          <img src="https://tf-assets-staging.s3.amazonaws.com/splash/courses/node/icon.svg" class="header__logo" alt="Logotipo Jean Silva">
         </div>
         <ul class="menu__list">
           <li class="list__item"><a href="#"><i class="fa fa-building" aria-hidden="true"></i>O que tenho feito</a></li>
@@ -47,10 +47,12 @@
           <h4 class="info__title">Sobre mim<span class="dot">.<span></h4>
           <hr class="info__line">
           <p class="info__description">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            <i class="fa fa-quote-left fa-3x fa-pull-left fa-border" aria-hidden="true"></i>
+...tomorrow we will run faster, stretch out our arms farther...
+And then one fine morning&mdash; So we beat on, boats against the
+current, borne back ceaselessly into the past, tomorrow we will run faster, stretch out our arms farther...
+And then one fine morning&mdash; So we beat on, boats against the
+current, borne back ceaselessly into the past.
           </p>
         </article>
         <article class="about__profile">
@@ -59,55 +61,62 @@
       </section>
 
       <section class="skills">
-        <i class="fa fa-user-o" aria-hidden="true"></i>
+        <i class="fa fa-file-code-o" aria-hidden="true"></i>
         <h4 class="skills__title">Eu sou expert em<span class="dot">.<span></h4>
         <hr class="skills__line">
+        <div class="skills__items">
+          <article class="items__web">
+            <i class="fa fa-desktop" aria-hidden="true"></i>
+            <h5 class="items__title">Desenvolvimento Web</h5>
+            <p>
+              alsdflajsdf alsjdflajsdflkasjdf alsdfjasldfjalsdf asdf
+              asdfasdfasd asdfasd.
+            </p>
+          </article>
+          <article class="items__mobile">
+            <i class="fa fa-mobile" aria-hidden="true"></i>
+            <h5 class="items__title">Desenvolvimento Mobile</h5>
+            <p>
+              alsdflajsdf alsjdflajsdflkasjdf alsdfjasldfjalsdf asdf
+              asdfasdfasd asdfasd.
+            </p>
+          </article>
+        </div>
       </section>
 
       <section class="works">
-        <h3 class="works__title">alguns trabalhos</h3>
+        <i class="fa fa-clone" aria-hidden="true"></i>
+        <h4 class="works__title">Alguns trabalhos<span class="dot">.<span></h4>
+        <hr class="info__line">
         <article class="works__web">
           <h4 class="web__title">Web Development</h4>
-          <img src="http://www.ecreative.ch/img/tech_icons/html5-css3-icon-shadow.png" alt="">
-          <img src="http://www.ecreative.ch/img/tech_icons/html5-css3-icon-shadow.png" alt="">
-          <img src="http://www.ecreative.ch/img/tech_icons/html5-css3-icon-shadow.png" alt="">
+          <div class="web__container">
+            <img src="images/web1.jpg" alt="">
+            <img src="images/web2.jpg" alt="">
+            <img src="images/web3.png" alt="">
+          </div>
         </article>
         <article class="works__mobile">
           <h4 class="mobile__title">Mobile Development</h4>
-          <img src="http://www.ecreative.ch/img/tech_icons/html5-css3-icon-shadow.png" alt="">
-          <img src="http://www.ecreative.ch/img/tech_icons/html5-css3-icon-shadow.png" alt="">
-        </article>
-      </section>
-
-
-
-      <section class="help">
-        <h3 class="help__title">o que posso fazer por você</h3>
-        <article class="help__web">
-          <i class="fa fa-desktop" aria-hidden="true"></i>
-          <h4 class="web__title">web development</h4>
-          <p class="web__description">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-          </p>
-        </article>
-        <article class="help__mobile">
-          <i class="fa fa-mobile" aria-hidden="true"></i>
-          <h4 class="mobile__title">mobile development</h4>
-          <p class="mobile__description">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-          </p>
+          <div class="mobile__container">
+            <img src="images/mobile1.jpg" alt="">
+            <img src="images/mobile2.jpg" alt="">
+            <img src="images/mobile3.jpg" alt="">
+          </div>
         </article>
       </section>
 
       <section class="blog">
-        <h3 class="blog__title">posts</h3>
+        <i class="fa fa-commenting-o" aria-hidden="true"></i>
+        <h4 class="blog__title">Posts<span class="dot">.<span></h4>
+        <hr class="info__line">
         <article class="blog__post">
           <img class="post__profile" src="https://cdn-images-1.medium.com/fit/c/36/36/0*suJd561o0WwEvzSp.jpeg" alt="">
           <h5 class="post__title">titulo do post</h5>
           <p class="post__description">
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
           </p>
-          <a class="" href="#">leia mais</a>
+          <a class="read__more" href="#">leia mais...</a>
         </article>
         <article class="blog__post">
           <img class="post__profile" src="https://cdn-images-1.medium.com/fit/c/36/36/0*suJd561o0WwEvzSp.jpeg" alt="">
@@ -115,9 +124,8 @@
           <p class="post__description">
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
           </p>
-          <a class="" href="#">leia mais</a>
+          <a class="read__more" href="#">leia mais...</a>
         </article>
-        <button type="button" name="button">Veja todos</button>
       </section>
     </main>
 
@@ -140,10 +148,10 @@
       </section>
 
       <ul class="footer__social">
-        <li class="social__item"><a href="#"><i class="fa fa-github" aria-hidden="true"></i></a></li>
-        <li class="social__item"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-        <li class="social__item"><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-        <li class="social__item"><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+        <li class="social__item"><a href="https://github.com/fjeansilva" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+        <li class="social__item"><a href="https://twitter.com/fjeansilva" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+        <li class="social__item"><a href="https://plus.google.com/u/0/117091262007274499181" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+        <li class="social__item"><a href="https://www.linkedin.com/in/fjeansilva" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
       </ul>
 
       <p class="footer__copyright">
