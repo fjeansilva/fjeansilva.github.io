@@ -37,7 +37,7 @@ body {
 }
 
 .header__logo {
-  width: 80px;
+  height: 80px;
 }
 
 .header__hamburguer {
@@ -520,6 +520,10 @@ body {
     margin-left: auto;
     margin-right: auto;
   }
+
+  .items__web, .items__mobile {
+    width: 60%;
+  }
 }
 
 @media screen and (min-width: 700px) {
@@ -546,33 +550,68 @@ body {
 
 @media screen and (min-width: 768px) {
 
+  /* MENU */
+
+  .header__container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .header__hamburguer,
+  .menu__title,
+  .menu__list > .list__item .fa {
+    display: none;
+  }
+
+  .header__menu {
+    position: relative;
+    background: none;
+    height: initial;
+    width: initial;
+    transform: none;
+  }
+
+  .menu__list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    list-style: none;
+  }
+
+  .menu__list > .list__item {
+    margin-right: 20px;
+  }
+
+  .menu__list > .list__item > a {
+    color: #fff;
+    transition: color 0.5s;
+  }
+
+  .menu__list > .list__item > a:hover {
+    color: #000;
+  }
+
+
+
   .header__title {
+    width: 100%;
     font-size: 1.7em;
   }
 
   .header__subtitle {
+    width: 100%;
     font-size: 3.1em;
   }
 
-  .header__social {
+  .header__social,
+  .footer__social {
     width: 446px;
     margin-left: auto;
     margin-right: auto;
   }
 
-  .about {
-    flex-flow: row wrap;
-    margin: 0;
-  }
-
-  .about__info {
-    padding-top: 30px;
-  }
-
-  .about__info,
-  .about__profile {
-    width: 50%;
-  }
 
   .profile_image {
     vertical-align: top;
@@ -617,7 +656,35 @@ body {
   }
 }
 
+@media screen and (min-width: 841px) {
+
+  .about {
+    flex-flow: row wrap;
+    margin: 0;
+  }
+
+  .about__info {
+    padding-top: 30px;
+  }
+
+  .about__info,
+  .about__profile {
+    width: 50%;
+  }
+}
+
 @media screen and (min-width: 1200px) {
+
+  .header__container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .header__subtitle {
+    font-size: 4em;
+  }
+
   .main {
     width: 1200px;
     margin-left: auto;

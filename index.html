@@ -9,24 +9,24 @@
   </head>
   <body>
     <header class="header">
+      <div class="header__container">
+        <img src="https://tf-assets-staging.s3.amazonaws.com/splash/courses/node/icon.svg" class="header__logo" alt="Logotipo Jean Silva">
 
-      <img src="https://tf-assets-staging.s3.amazonaws.com/splash/courses/node/icon.svg" class="header__logo" alt="Logotipo Jean Silva">
+        <i class="header__hamburguer fa fa-bars" aria-hidden="true"></i>
 
-      <i class="header__hamburguer fa fa-bars" aria-hidden="true"></i>
+        <nav class="header__menu">
+          <div class="menu__title">
+            <img src="https://tf-assets-staging.s3.amazonaws.com/splash/courses/node/icon.svg" class="header__logo" alt="Logotipo Jean Silva">
+          </div>
+          <ul class="menu__list">
+            <li class="list__item"><a class="anc" href="#about"><i class="fa fa-building" aria-hidden="true"></i>Sobre</a></li>
+            <li class="list__item"><a class="anc" href="#skills"><i class="fa fa-file-code-o" aria-hidden="true"></i>Conhecimento</a></li>
+            <li class="list__item"><a class="anc" href="#works"><i class="fa fa-cogs" aria-hidden="true"></i>Trabalhos</a></li>
+            <li class="list__item"><a class="anc" href="#blog"><i class="fa fa-commenting-o" aria-hidden="true"></i>Blog</a></li>
+          </ul>
+        </nav>
+      </div>
 
-      <nav class="header__menu">
-        <div class="menu__title">
-          <img src="https://tf-assets-staging.s3.amazonaws.com/splash/courses/node/icon.svg" class="header__logo" alt="Logotipo Jean Silva">
-        </div>
-        <ul class="menu__list">
-          <li class="list__item"><a href="#"><i class="fa fa-building" aria-hidden="true"></i>O que tenho feito</a></li>
-          <li class="list__item"><a href="#"><i class="fa fa-cogs" aria-hidden="true"></i>Trabalhos</a></li>
-          <li class="list__item"><a href="#"><i class="fa fa-file-code-o" aria-hidden="true"></i>Conhecimento</a></li>
-          <li class="list__item"><a href="#"><i class="fa fa-question" aria-hidden="true"></i>Posso te ajudar</a></li>
-          <li class="list__item"><a href="#"><i class="fa fa-commenting-o" aria-hidden="true"></i>Blog</a></li>
-          <li class="list__item"><a href="#"><i class="fa fa-user" aria-hidden="true"></i>Contato</a></li>
-        </ul>
-      </nav>
 
       <h1 class="header__title">Olá, meu nome é <strong>Jean Silva</strong> e eu <i class="icon__heart">♡</i><em>JavaScript!</em></h1>
       <h2 class="header__subtitle">engenheiro front-end</h2>
@@ -41,18 +41,15 @@
 
     <main class="main">
 
-      <section class="about">
+      <section id="about" class="about">
         <article class="about__info">
           <i class="fa fa-user-o" aria-hidden="true"></i>
           <h4 class="info__title">Sobre mim<span class="dot">.<span></h4>
           <hr class="info__line">
           <p class="info__description">
             <i class="fa fa-quote-left fa-3x fa-pull-left fa-border" aria-hidden="true"></i>
-...tomorrow we will run faster, stretch out our arms farther...
-And then one fine morning&mdash; So we beat on, boats against the
-current, borne back ceaselessly into the past, tomorrow we will run faster, stretch out our arms farther...
-And then one fine morning&mdash; So we beat on, boats against the
-current, borne back ceaselessly into the past.
+... Eu sou um engenheiro front-end de Brasília, DF. Tenho trabalhado em vários projetos para grandes corporações
+como Bacen, CTIS e UTC Engenharia. Desenvolvo desde pequenos sites comerciais até grandes aplicações web interativas e mobile apps.
           </p>
         </article>
         <article class="about__profile">
@@ -60,7 +57,7 @@ current, borne back ceaselessly into the past.
         </article>
       </section>
 
-      <section class="skills">
+      <section id="skills" class="skills">
         <i class="fa fa-file-code-o" aria-hidden="true"></i>
         <h4 class="skills__title">Eu sou expert em<span class="dot">.<span></h4>
         <hr class="skills__line">
@@ -69,22 +66,22 @@ current, borne back ceaselessly into the past.
             <i class="fa fa-desktop" aria-hidden="true"></i>
             <h5 class="items__title">Desenvolvimento Web</h5>
             <p>
-              alsdflajsdf alsjdflajsdflkasjdf alsdfjasldfjalsdf asdf
-              asdfasdfasd asdfasd.
+              Utilizo em meus projetos Web, as mais variadas tecnologias. Dentro da minha caixa de ferramentas
+              se encontram: <em>HTML5, CSS3, JavaScript, React, Ember, ReactJS e AngularJS</em>.
             </p>
           </article>
           <article class="items__mobile">
             <i class="fa fa-mobile" aria-hidden="true"></i>
             <h5 class="items__title">Desenvolvimento Mobile</h5>
             <p>
-              alsdflajsdf alsjdflajsdflkasjdf alsdfjasldfjalsdf asdf
-              asdfasdfasd asdfasd.
+              Android e iOS são a minha especialidade, desenvolvo de forma nativa para entregar
+              um software que use o máximo que a plataforma possa oferecer.
             </p>
           </article>
         </div>
       </section>
 
-      <section class="works">
+      <section id="works" class="works">
         <i class="fa fa-clone" aria-hidden="true"></i>
         <h4 class="works__title">Alguns trabalhos<span class="dot">.<span></h4>
         <hr class="info__line">
@@ -106,24 +103,28 @@ current, borne back ceaselessly into the past.
         </article>
       </section>
 
-      <section class="blog">
+      <section id="blog" class="blog">
         <i class="fa fa-commenting-o" aria-hidden="true"></i>
         <h4 class="blog__title">Posts<span class="dot">.<span></h4>
         <hr class="info__line">
         <div class="blog__container">
           <article class="blog__post">
             <img class="post__profile" src="https://cdn-images-1.medium.com/fit/c/36/36/0*suJd561o0WwEvzSp.jpeg" alt="">
-            <h5 class="post__title">titulo do post</h5>
+            <h5 class="post__title">JavaScript é o seu melhor amigo :)</h5>
             <p class="post__description">
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+              Com tantos frameworks JavaScript no mercado, a cada novo projeto surge sempre as mesmas questões?
+              Qual framework usar? Qual o melhor framework para o projeto?
+              A grande questão é que muitos front-end developers não dominam o essencial é que o nosso querido JavaScript.
             </p>
             <a class="read__more" href="#">leia mais...</a>
           </article>
           <article class="blog__post">
             <img class="post__profile" src="https://cdn-images-1.medium.com/fit/c/36/36/0*suJd561o0WwEvzSp.jpeg" alt="">
-            <h5 class="post__title">titulo do post</h5>
+            <h5 class="post__title">Vamos falar de Mobile-first?</h5>
             <p class="post__description">
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+              Convencido do tamanho gigantesco do mercado mobile e de que a Web é uma só pra todo mundo, você decide investir
+              no design responsivo. Ótimo passo. Hora de tomar a próxima decisão: por onde começar?
+              <em>autor: Sérgio Lopes</em>
             </p>
             <a class="read__more" href="#">leia mais...</a>
           </article>
@@ -144,7 +145,7 @@ current, borne back ceaselessly into the past.
         <article class="contact__email">
           <h3 class="email__title">email</h3>
           <p class="email__info">
-            jeansilva@me.com
+            jeancarlos.silva@me.com
           </p>
         </article>
       </section>
@@ -160,6 +161,7 @@ current, borne back ceaselessly into the past.
         Copyright (c) 2016 Copyright Jean Silva All Rights Reserved.
       </p>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     <script src="js/app.js"></script>
   </body>
 </html>
