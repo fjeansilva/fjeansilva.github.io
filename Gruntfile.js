@@ -32,6 +32,34 @@ module.exports = function(grunt) {
       }
     },
 
+    concat: {
+      dist: {
+        src: [
+          'js/*.js'
+        ],
+        dest: 'js/build/production.js'
+      }
+    },
+
+    uglify: {
+      build: {
+        src: 'js/build/production.js',
+        dest: 'js/build/production.min.js'
+      }
+    },
+
+    cssmin: {
+      target: {
+        files: [{
+          expand: true,
+          cwd: 'css',
+          src: ['*.css'],
+          dest: 'css',
+          ext: '.min.css'
+        }]
+      }
+    },
+
     pagespeed: {
       options: {
         nokey: true,
@@ -48,8 +76,11 @@ module.exports = function(grunt) {
     }
   });
 
+  grunt.loadNpmTasks('grunt-contrib-concat');
+  grunt.loadNpmTasks('grunt-contrib-cssmin');
+  grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-pagespeed');
   grunt.loadNpmTasks('grunt-responsive-images');
 
-  grunt.registerTask('default', ['responsive_images', 'pagespeed']);
+  grunt.registerTask('default', ['responsive_images', 'pagespeed', 'concat', 'uglify', 'cssmin']);
 }
