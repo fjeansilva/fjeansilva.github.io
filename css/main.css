@@ -15,11 +15,10 @@ body {
   background: #fefefe;
 }
 
+/* GENERAL */
 .dot {
   color: #ff0000;
 }
-
-/* GENERAL */
 
 /*
  *
@@ -65,10 +64,6 @@ body {
   transform: translate(0, 0);
 }
 
-.header__menu--hidden {
-  display: none;
-}
-
 .header__title {
   margin-top: 100px;
   text-align: center;
@@ -88,13 +83,13 @@ body {
   line-height: 4em;
 }
 
-.menu__list > .list__item > a {
+.menu__list > .list__item > .item {
   text-decoration: none;
   color: #2f2f32;
 }
 
 .menu__list > .list__item  .fa {
-  padding-right: 10px;
+padding-right: 10px;
 }
 
 .header__subtitle {
@@ -146,18 +141,17 @@ body {
 }
 
 .about__info,
-.about__profile {
+.about__profile,
+.profile_image {
   width: 100%;
 }
 
 .profile_image {
-  width: 100%;
   vertical-align: bottom;
 }
 
 .about__info {
   text-align: center;
-  width: 100%;
 }
 
 .info__description {
@@ -241,16 +235,16 @@ body {
  *
  */
 
- .works {
-   padding: 30px;
-   text-align: center;
- }
+.works {
+  padding: 30px;
+  text-align: center;
+}
 
 .works__title {
   text-align: center;
-  font-size: 3em;
 }
 
+.works__title,
 .works > .fa {
   font-size: 3em;
 }
@@ -278,11 +272,10 @@ body {
 }
 
 .blog > .fa {
-  font-size: 3em;
   display: block;
-  text-align: center;
 }
 
+.blog > .fa,
 .blog__title {
   text-align: center;
   font-size: 3em;
@@ -321,15 +314,15 @@ body {
  *
  */
 
- .footer {
-   background: #232526;
-   color: #b9b9b9;
- }
+.footer {
+  background: #232526;
+  color: #b9b9b9;
+}
 
- .footer__contact {
-   display: flex;
-   flex-flow: row wrap;
- }
+.footer__contact {
+  display: flex;
+  flex-flow: row wrap;
+}
 
 .contact__phone,
 .contact__email {
@@ -353,7 +346,7 @@ body {
   flex-flow: row wrap;
   justify-content: space-around;
   margin: 20px 20%;
- }
+}
 
 .footer__copyright {
   padding: 30px 0 20px 0;
@@ -361,101 +354,104 @@ body {
   font-size: 0.8em;
 }
 
-/* SMALL SMARTPHONES LOW RESOLUTIONS */
+
 @media screen and (max-width: 380px) {
+
   /*
    *
    * Header
    *
    */
 
-   .header__logo {
-     width: 60px;
-   }
+  .header__logo {
+    width: 60px;
+  }
 
-   .header__menu {
-     width: 250px;
-   }
+  .header__menu {
+    width: 250px;
+  }
 
-   .header__title {
-     font-size: 2em;
-     margin-bottom: 35px;
-   }
+  .header__title {
+    font-size: 2em;
+    margin-bottom: 35px;
+  }
 
-   .header__social {
-     margin: 0;
-   }
+  .header__social {
+    margin: 0;
+  }
 
-   .social__item .fa {
-     border-radius: 50%;
-     width: 30px;
-     height: 30px;
-     padding: 14px 0 0 15px;
-     background: #191919;
-     color: #fff;
-     transition: background 0.5s;
-   }
+  .social__item .fa {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    padding: 14px 0 0 15px;
+    background: #191919;
+    color: #fff;
+    transition: background 0.5s;
+  }
 
-   .items__web,
-   .items__mobile {
-     padding: 30px 5px;
-   }
+  .items__web,
+  .items__mobile {
+    padding: 30px 5px;
+  }
 
-   /*
-    *
-    * Works
-    *
-    */
+  /*
+   *
+   * Works
+   *
+   */
 
-   .works__title {
-     font-size: 1.5em;
-   }
+  .works__title {
+    font-size: 1.5em;
+  }
 
-   .web__container,
-   .mobile__container {
-     flex-flow: column wrap;
-   }
+  .web__container,
+  .mobile__container {
+    flex-flow: column wrap;
+  }
 
-   /*
-    *
-    * Blog
-    *
-    */
+  /*
+   *
+   * Blog
+   *
+   */
 
-   .blog__title {
-     font-size: 1.5em;
-   }
+  .blog__title {
+    font-size: 1.5em;
+  }
 
-   .blog__post {
-     width: 80%;
-   }
+  .blog__post {
+    width: 80%;
+  }
 
-   .post__title {
-     font-size: 1em;
-     line-height: 0;
-   }
+  .post__title {
+    font-size: 1em;
+    line-height: 0;
+  }
 
-   /*
-    *
-    * Footer
-    *
-    */
+  /*
+   *
+   * Footer
+   *
+   */
 
-   .contact__phone {
-     text-align: left;
-   }
+  .contact__phone {
+    text-align: left;
+  }
 
-   .footer__social {
-     margin: 0;
-   }
+  .footer__social {
+    margin: 0;
+  }
 
-   .footer__copyright {
-     font-size: 0.7em;
-   }
+  .footer__copyright {
+    font-size: 0.7em;
+  }
+
 }
 
-/* MEDIUM AND LARGES SMARTPHONES HIGH RESOLUTIONS */
+
 @media screen and (min-width: 381px) and (max-width: 500px){
+
   /*
    *
    * Header
@@ -506,7 +502,15 @@ body {
 
 }
 
+
 @media screen and (min-width: 501px) {
+
+  /*
+   *
+   * Header
+   *
+   */
+
   .header__title {
     font-size: 1.4em;
   }
@@ -524,9 +528,17 @@ body {
   .items__web, .items__mobile {
     width: 60%;
   }
+
 }
 
+
 @media screen and (min-width: 700px) {
+
+  /*
+   *
+   * Header
+   *
+   */
 
   .header__subtitle {
     font-size: 2.9em;
@@ -546,11 +558,17 @@ body {
   .items__web {
     margin: 0 10px;
   }
+
 }
+
 
 @media screen and (min-width: 768px) {
 
-  /* MENU */
+  /*
+   *
+   * Header
+   *
+   */
 
   .header__container {
     display: flex;
@@ -593,8 +611,6 @@ body {
     color: #000;
   }
 
-
-
   .header__title {
     width: 100%;
     font-size: 1.7em;
@@ -612,9 +628,8 @@ body {
     margin-right: auto;
   }
 
-
   .profile_image {
-    vertical-align: top;
+  vertical-align: top;
   }
 
   .web__container,
@@ -654,9 +669,17 @@ body {
     padding: 20px;
     margin: 0 10px;
   }
+
 }
 
+
 @media screen and (min-width: 841px) {
+
+  /*
+   *
+   * About
+   *
+   */
 
   .about {
     flex-flow: row wrap;
@@ -671,10 +694,19 @@ body {
   .about__profile {
     width: 50%;
   }
+
 }
+
 
 @media screen and (min-width: 1200px) {
 
+  /*
+   *
+   * Header and Main
+   *
+   */
+
+  .main,
   .header__container {
     width: 1200px;
     margin-left: auto;
@@ -682,14 +714,12 @@ body {
   }
 
   .header__subtitle {
-    font-size: 4em;
+  font-size: 4em;
   }
 
   .main {
-    width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
     border-left: 1px solid #efefef;
     border-right: 1px solid #efefef;
   }
+
 }
